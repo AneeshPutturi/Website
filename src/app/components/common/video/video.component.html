@@ -1,0 +1,18 @@
+<div class="video-area ptb-100">
+    <div class="container">
+        <div class="video-content">
+            <h2>Best Place of Culinary</h2>
+            <button class="video-btn popup-youtube" (click)="openPopup()"><i class="icofont-play"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup" *ngIf="isOpen">
+    <div class="popup-inner">
+        <iframe src="https://www.youtube.com/embed/XNQk1qt__Vw" title="Setup and Local Installation - React Nextjs Online Yoga Coaching &amp; Training Courses System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="close-btn">
+            <i class='icofont-ui-close'></i>
+        </button>
+    </div>
+</div>
